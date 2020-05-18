@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F9F9F9;
+}
+
+#check {
+    /* Configuração do checkbox */
+    display: none;
+}
+
+#icone{
+    /* Configuração da icone do menu */
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    /* Configuração da barra interna do menu */
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.link{
+    /* Configuração do text e designer dos links */
+    background-color: #494950;
+    padding: 20px;
+    font-family: 'Arial';
+    font-size: 12pt;
+    transition: all .2s linear; /* Efeito para aparecer o menu ao clicar no checkbox */
+    color: #F4F4F9;
+    border-bottom: 2px solid #222;
+
+    /* Efeito de entrada */
+    /*opacity: 0;
+    margin-top: 200px;*/
+}
+
+.link:hover {
+    /* Configuração do estilo ao passar o mouse no link */
+    background-color: #050442;
+}
+
+#check:checked ~ .barra{
+    /* Configuração para aparecer o menu ao clicar no checkbox */
+    transform: translateX(300px);
+}
+/*
+#check:checked ~ .barra nav a .link{
+    /* Configuração de efeito para os link subirem 
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: .2s;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+img {
+    width: 30px;
+    height: 30px;
+}
